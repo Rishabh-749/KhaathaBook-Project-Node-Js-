@@ -24,7 +24,7 @@ This mini-project is a simplified digital version of a **personal ledger book**.
 ## 📁 Folder Structure
 
 > KhaataBook_Project_NodeJS/
-│
+│                              
 ├── app.js # Main Express server
 ├── package.json # NPM dependencies
 ├── /views # EJS template files
@@ -32,12 +32,12 @@ This mini-project is a simplified digital version of a **personal ledger book**.
 │ ├── create.ejs
 │ ├── edit.ejs
 │ └── hissab.ejs
-│
+│                                            
 ├── /public # Static assets (CSS, images, JS)
-│
+│                                           
 ├── /Hisaabs # Stores each record as .txt file
 │ └── sample.txt
-│
+│                                              
 └── /node_modules # Node packages
 
 
