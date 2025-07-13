@@ -23,7 +23,7 @@ This mini-project is a simplified digital version of a **personal ledger book**.
 
 ## 📁 Folder Structure
 
-KhaataBook_Project_NodeJS/
+> KhaataBook_Project_NodeJS/
 │
 ├── app.js # Main Express server
 ├── package.json # NPM dependencies
