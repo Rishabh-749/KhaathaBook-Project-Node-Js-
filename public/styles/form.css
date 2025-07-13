@@ -1,0 +1,61 @@
+form{
+    width: 100%;
+    gap: 5%;
+}
+
+.form-common{
+    width: 80%;
+    background-color: rgba(101, 105, 105, 0.241);
+    border-radius: 4px;
+    border: none;
+}
+
+.form-container{
+    background-color: transparent;
+}
+
+.title{
+    height: 6%;
+    padding: 4px 10px;
+}
+
+.description{
+    height: 60%;
+    padding: 4px 10px;
+}
+
+.btn{
+    padding: 8px 10px;
+    background-color:indianred;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all .1s ease-in;
+}
+
+.btn:hover{
+    background-color: rgb(241, 104, 104);
+    transform: scale(1.1);
+}
+
+.hissab-data{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.hissab-data::-webkit-scrollbar{
+    /* display: none; */
+    background-color: inherit;
+    color: black;
+    width: 12px;
+}
+
+.hissab-data::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 128, 128, 0.352);
+    /* height: 5px; */
+    border-radius: 4px;
+}
+
+.hissab-data::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 128, 128, 0.721);
+}

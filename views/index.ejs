@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhaataBook App</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/utility.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading flex items-center">
+            <nav class="nav flex justify-between">
+                <h1>KhaataBook App</h1>    
+                <div class="nav-r flex">
+                    <a href="/">
+                        <h4>Home</h4>
+                    </a>
+                    <a href="/create">
+                        <h4>Create New Record</h4>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="records-container flex flex-col items-center">
+            <div class="inner-heading">
+                <h3>All Hisaab Kitaab</h3>
+            </div>
+            <div class="records flex flex-col items-center">
+                <% if(files.length > 0){ %>
+                    <% files.forEach((file)=>{ %>
+                        <div class="record flex items-center justify-between">
+                            <div class="left flex items-center">
+                                <h1><%= file.split('.')[0] %></h1>
+                                <a href="/hissab/<%=file.split('.')[0] %>" class="flex items-center">
+                                    <img src="/images/arrow-1.svg" alt="left-arrow">
+                                </a>
+                            </div>
+                            <div class="right flex items-center">
+                                <a href="/edit/<%= file.split('.')[0] %>" class="flex items-center">
+                                    <img src="/images/edit.svg" alt="left-arrow">
+                                </a>
+                                <a href="/delete/<%= file.split('.')[0] %>" class="flex items-center">
+                                    <img src="/images/delete.svg" alt="left-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    <% }) %>
+                <% }else{ %>
+                    <h2>Records Not Found</h2>
+                    <%}%>
+                
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
